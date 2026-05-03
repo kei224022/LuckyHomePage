@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>会社概要 | 株式会社ラッキー</title>
+  <meta name="description" content="株式会社ラッキーの会社概要・事業概要・主要取引先・沿革をご案内します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer="" src="assets/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabs = document.querySelectorAll('.company-tab');
+      const panels = document.querySelectorAll('.company-tab-panel');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (t) { t.classList.remove('active'); });
+          panels.forEach(function (p) { p.classList.remove('active'); });
+          tab.classList.add('active');
+          document.getElementById(tab.dataset.tab).classList.add('active');
+        });
+      });
+      // Activate from hash
+      const hash = location.hash.replace('#', '');
+      if (hash) {
+        const target = document.querySelector('[data-tab="' + hash + '"]');
+        if (target) target.click();
+      }
+    });
+  </script>
+</head>
+<body data-page="company">
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="株式会社ラッキー トップページ">
+        <img src="assets/logo.svg" alt="株式会社ラッキー" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="brand-text" style="display:none">株式会社ラッキー<small>LUCKY Co., Ltd.</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">メニュー</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="グローバルナビゲーション">
+        <a href="index.html" data-nav="home">トップページ</a>
+        <a href="products.html" data-nav="products">製品情報</a>
+        <a href="stores.html" data-nav="stores">店舗情報</a>
+        <a href="used.html" data-nav="used">中古機情報</a>
+        <a href="company.html" data-nav="company">会社概要</a>
+        <a href="recruit.html" data-nav="recruit">求人情報</a>
+        <a href="contact.html" data-nav="contact">お問合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Company</p>
+        <h1>会社概要</h1>
+        <p>株式会社ラッキーの会社情報・事業概要・主要取引先・沿革をご案内します。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Tab Nav -->
+        <div class="company-tabs" role="tablist" aria-label="会社情報タブ">
+          <button class="company-tab active" data-tab="tab-profile" role="tab" aria-selected="true">会社概要</button>
+          <button class="company-tab" data-tab="tab-business" role="tab" aria-selected="false">事業概要</button>
+          <button class="company-tab" data-tab="tab-customer" role="tab" aria-selected="false">主要取引先</button>
+          <button class="company-tab" data-tab="tab-history" role="tab" aria-selected="false">沿革</button>
+        </div>
+
+        <!-- Tab: 会社概要 -->
+        <div id="tab-profile" class="company-tab-panel active" role="tabpanel">
+          <div class="split" style="margin-bottom:clamp(2rem,4vw,3rem);">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Message</p>
+              <h2>地域とともに、<br>遊びの安心を支える。</h2>
+            </div>
+            <div class="prose reveal reveal-delay-1">
+              <p>日頃より株式会社ラッキーをご利用いただき誠にありがとうございます。当社は千葉を拠点に、アミューズメント施設の運営、アミューズメント機械の製造販売、不動産関連の事業を行っています。</p>
+              <p>お客様、取引先、地域の皆様に安心して関わっていただけるよう、正確な情報発信と丁寧な対応を大切にしてまいります。</p>
+            </div>
+          </div>
+
+          <div class="section--muted" style="border-radius:var(--radius-lg);padding:clamp(1.5rem,3vw,2.5rem);">
+            <p class="eyebrow" style="margin-bottom:0.75rem;">Profile</p>
+            <h2 style="margin-bottom:1.5rem;font-size:1.25rem;">会社情報</h2>
+            <div class="profile-table reveal">
+              <dl>
+                <div><dt>商号</dt><dd>株式会社ラッキー</dd></div>
+                <div>
+                  <dt>所在地</dt>
+                  <dd>販売事業本部、営業本部<br>〒263-0022 千葉県千葉市稲毛区弥生町2丁目15番地 ラッキービル2F<br>代表電話番号: 043-252-2403 / 代表FAX番号: 043-287-6067</dd>
+                </div>
+                <div><dt>創立</dt><dd>1953年12月1日（昭和27年）</dd></div>
+                <div><dt>設立</dt><dd>1966年12月1日（昭和41年）</dd></div>
+                <div><dt>資本金</dt><dd>70,000,000円</dd></div>
+                <div><dt>決算日</dt><dd>8月31日（年1回）</dd></div>
+                <div><dt>役員</dt><dd>代表取締役社長　石川 良一</dd></div>
+                <div><dt>従業員数</dt><dd>正社員 20人 / アルバイト・パート 70人（2019年5月現在）</dd></div>
+                <div><dt>事業内容</dt><dd>ゲーム機器企画・製造、ゲーム機器販売、直営店舗経営、バッティングセンター経営、ゲーム機リース運営、コンピュータ機器および周辺機器販売、コンピュータソフト開発およびマネージメント、家電製品販売、駐車場経営、不動産賃貸、その他アミューズメント関連全般</dd></div>
+                <div><dt>取引銀行</dt><dd>千葉銀行、千葉興業銀行、みずほ銀行、三井住友銀行、京葉銀行</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div style="margin-top:clamp(2rem,4vw,3rem);">
+            <p class="eyebrow" style="margin-bottom:0.75rem;">Strength</p>
+            <h2 style="margin-bottom:1.5rem;font-size:1.25rem;">ラッキーが大切にしていること</h2>
+            <div class="business-grid">
+              <article class="info-card reveal">
+                <span class="tag">Local</span>
+                <h3>地域密着</h3>
+                <p>千葉県内の店舗運営を通じて、日々のお客様の声を事業に反映しています。</p>
+              </article>
+              <article class="info-card reveal reveal-delay-1">
+                <span class="tag">Operation</span>
+                <h3>現場を知る提案</h3>
+                <p>直営店舗で培った運営視点を、機器販売や中古機売買のご相談にも活かします。</p>
+              </article>
+              <article class="info-card reveal reveal-delay-2">
+                <span class="tag">Trust</span>
+                <h3>分かりやすい確認</h3>
+                <p>価格、納期、動作状態、搬入条件など、取引前に必要な情報を丁寧に確認します。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: 事業概要 -->
+        <div id="tab-business" class="company-tab-panel" role="tabpanel">
+          <div class="split" style="margin-bottom:clamp(2rem,4vw,3rem);">
+            <div class="section-heading">
+              <p class="eyebrow">Business</p>
+              <h2>事業概要</h2>
+            </div>
+            <p class="prose" style="font-size:0.9rem;color:var(--text-muted);">直営店舗の運営と不動産賃貸事業を中心に、千葉県内で幅広い事業を展開しています。</p>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:1.5rem;">
+            <!-- 本社 -->
+            <div>
+              <h3 style="font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">本社</h3>
+              <div class="details">
+                <div><dt>住所</dt><dd>〒263-0022 千葉県千葉市稲毛区弥生町2-15</dd></div>
+              </div>
+            </div>
+
+            <!-- 直営店舗 -->
+            <div>
+              <h3 style="font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">直営 自社店舗</h3>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>店舗名</th>
+                      <th>住所</th>
+                      <th>詳細</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="font-weight:700;">中央店「フェリシダ」</td>
+                      <td>〒260-0015 千葉県千葉市中央区富士見2-8-1</td>
+                      <td><a href="felicidad.html" style="color:var(--red);font-weight:700;">店舗ページ</a></td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight:700;">佐倉店</td>
+                      <td>〒285-0855 千葉県佐倉市井野1475</td>
+                      <td><a href="sakura.html" style="color:var(--red);font-weight:700;">店舗ページ</a></td>
+                    </tr>
+                    <tr>
+                      <td style="font-weight:700;">八千代店「ラッキーバッティングドーム」</td>
+                      <td>〒276-0046 千葉県八千代市大和田新田1088</td>
+                      <td><a href="yachiyo.html" style="color:var(--red);font-weight:700;">店舗ページ</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- 賃貸物件 -->
+            <div>
+              <h3 style="font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">賃貸物件</h3>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>店舗・物件名</th>
+                      <th>住所</th>
+                      <th>賃借面積</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ミニストップ</td>
+                      <td>〒276-0046 千葉県八千代市大和田新田1088</td>
+                      <td>58坪</td>
+                    </tr>
+                    <tr>
+                      <td>スタミナ太郎</td>
+                      <td>同上</td>
+                      <td>159坪</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: 主要取引先 -->
+        <div id="tab-customer" class="company-tab-panel" role="tabpanel">
+          <div class="split" style="margin-bottom:clamp(2rem,4vw,3rem);">
+            <div class="section-heading">
+              <p class="eyebrow">Customers</p>
+              <h2>主要取引先</h2>
+            </div>
+            <p style="font-size:0.85rem;color:var(--text-muted);">50音順・敬称略。その他取引先多数。</p>
+          </div>
+
+          <div class="partner-section">
+            <h3>国内取引先</h3>
+            <div class="partner-grid">
+              <span class="partner-chip">株式会社 加賀電子</span>
+              <span class="partner-chip">グローリー商事 株式会社</span>
+              <span class="partner-chip">コナミデジタルエンタテイメント 株式会社</span>
+              <span class="partner-chip">システムサービス 株式会社</span>
+              <span class="partner-chip">シャープエレクトロニクスマーケティング 株式会社</span>
+              <span class="partner-chip">株式会社 セガサミー</span>
+              <span class="partner-chip">株式会社 セガ・ロジスティクスサービス</span>
+              <span class="partner-chip">株式会社 タイトー</span>
+              <span class="partner-chip">東芝家電販売 株式会社</span>
+              <span class="partner-chip">パナソニックロジスティクス 株式会社</span>
+              <span class="partner-chip">株式会社 バンダイナムコ</span>
+              <span class="partner-chip">バンプレスト販売 株式会社</span>
+              <span class="partner-chip">株式会社 フリュー</span>
+              <span class="partner-chip">株式会社 メイクイースト</span>
+            </div>
+          </div>
+
+          <div class="partner-section">
+            <h3>海外取引先</h3>
+            <div class="partner-overseas">
+              <div class="partner-overseas-card">
+                <strong>中国（上海・広州）</strong>
+                2社
+              </div>
+              <div class="partner-overseas-card">
+                <strong>韓国</strong>
+                1社
+              </div>
+              <div class="partner-overseas-card">
+                <strong>オーストラリア</strong>
+                1社
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: 沿革 -->
+        <div id="tab-history" class="company-tab-panel" role="tabpanel">
+          <div class="split" style="margin-bottom:clamp(2rem,4vw,3rem);">
+            <div class="section-heading">
+              <p class="eyebrow">History</p>
+              <h2>沿革</h2>
+            </div>
+            <p style="font-size:0.85rem;color:var(--text-muted);">1966年の設立以来、千葉を拠点にアミューズメント産業の発展とともに歩んできた株式会社ラッキーの歩みです。</p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item"><time>1966年12月</time><p>本社　千葉市富士見2－4－16</p></div>
+            <div class="timeline-item"><time>1980年11月</time><p>石川良一　取締役に就任</p></div>
+            <div class="timeline-item"><time>1981年5月</time><p>千葉市弥生町に「西千葉店」開店</p></div>
+            <div class="timeline-item"><time>1981年10月</time><p>石川良一　代表取締役社長に就任</p></div>
+            <div class="timeline-item"><time>1982年2月</time><p>資本金を1,000万円に増資</p></div>
+            <div class="timeline-item"><time>1991年6月</time><p>AM機器販売業務拡張に伴い本社を千葉市稲毛区弥生町1－15に移転</p></div>
+            <div class="timeline-item"><time>1991年11月</time><p>資本金を4,000万円に増資</p></div>
+            <div class="timeline-item"><time>1996年5月</time><p>千葉市中央区富士見に店舗用地300坪購入</p></div>
+            <div class="timeline-item"><time>1996年9月</time><p>千葉県千葉市に中央店「フェリシダ」開店</p></div>
+            <div class="timeline-item"><time>1998年6月</time><p>業務拡張に伴い千葉市稲毛区弥生町2－15に本社業務移転</p></div>
+            <div class="timeline-item"><time>2000年8月</time><p>資本金を7,000万円に増資 / 八千代市に複合店舗用地購入</p></div>
+            <div class="timeline-item"><time>2001年1月</time><p>千葉県八千代市に「ラッキーバッティングドーム」開店</p></div>
+            <div class="timeline-item"><time>2001年3月</time><p>複合テナントビル八千代店「フェリシダランド」開園</p></div>
+            <div class="timeline-item"><time>2006年12月</time><p>業務用PCB「アルカナハート」発売 / 千葉県千葉市中央区に「ラッキー千葉店」開店</p></div>
+            <div class="timeline-item"><time>2008年5月</time><p>千葉県四街道市に店舗用地購入</p></div>
+            <div class="timeline-item"><time>2008年9月</time><p>八千代店駐車場30台増設（1,980坪）</p></div>
+            <div class="timeline-item"><time>2008年12月</time><p>千葉県四街道市に「エスタシオン」開店</p></div>
+            <div class="timeline-item"><time>2009年5月</time><p>千葉県千葉市中央区「千葉センタースクエアビル」購入</p></div>
+            <div class="timeline-item"><time>2010年3月</time><p>任天堂Wii向けソフト「ラジルギノア」発売</p></div>
+            <div class="timeline-item"><time>2010年4月</time><p>次世代業務用汎用筐体「ギャラクシー筐体」発売</p></div>
+            <div class="timeline-item"><time>2011年9月</time><p>千葉センタースクエアビル地下駐車場リニューアル（P48台、セルフパーキング）</p></div>
+            <div class="timeline-item"><time>2012年1月</time><p>グループ会社「株式会社コーデック」不動産業務開設</p></div>
+            <div class="timeline-item"><time>2015年3月</time><p>「ラッキー千葉店」閉店</p></div>
+            <div class="timeline-item"><time>2015年4月</time><p>千葉県佐倉市に「ラッキー佐倉店」開店</p></div>
+            <div class="timeline-item"><time>2017年5月</time><p>「エスタシオン」閉店</p></div>
+            <div class="timeline-item"><time>2018年6月</time><p>「ラッキー木更津店」閉店 / 千葉センタースクエア売却</p></div>
+            <div class="timeline-item"><time>2020年9月</time><p>四街道店売却</p></div>
+            <div class="timeline-item"><time>2022年3月</time><p>「ラッキー西千葉店」閉店</p></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo.svg" alt="株式会社ラッキー" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <p class="footer-logo-text" style="display:none">株式会社ラッキー</p>
+        <p>〒263-0022 千葉県千葉市稲毛区弥生町2丁目15番地 ラッキービル2F</p>
+        <p>代表電話: <a href="tel:0432522403">043-252-2403</a> / FAX: 043-287-6067</p>
+      </div>
+      <nav aria-label="フッターナビゲーション">
+        <a href="index.html">トップページ</a>
+        <a href="products.html">製品情報</a>
+        <a href="stores.html">店舗情報</a>
+        <a href="used.html">中古機情報</a>
+        <a href="contact.html">お問合わせ</a>
+        <a href="recruit.html">求人情報</a>
+      </nav>
+    </div>
+    <p class="copyright">Copyright &copy; Lucky Co., Ltd. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
